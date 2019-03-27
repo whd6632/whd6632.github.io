@@ -57,15 +57,9 @@
 	<div class="fakeimg"><img class="img-responsive center-block" src="../images/2wima.jpg"></div><br>
 	
 	<div id="">
-		<input type="button" name="anniu2" onClick='copyUrl()' value="复制本站网址发给朋友"> 
- <script language="javascript"> 
-   function copyUrl()
-   { 
-    var clipBoardContent=this.location.href; 
-    window.clipboardData.setData("Text",clipBoardContent); 
-    alert("复制成功!"); 
-   } 
-  </script> 
+ <input name=myimg type=hidden id=myimg value="http://vipmeng.com" />  
+<input name=imgurl type=text size=32 value="http://vipmeng.com" />  
+<input type=button value="点击这里复制本站网址发给朋友" onclick="CopyUrl(imgurl);" />  
 <br/>
 	</div>
 	
