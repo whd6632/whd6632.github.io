@@ -22,7 +22,126 @@
 	<body>
 		<div class="container-fluid">
 			<div class="row-fluid">
-				<div class="span12">		
+				<div class="span12">	
+					
+					<!--表格带边框　1-6等奖通用 -->
+					<b>摇奖1000次的中奖概率</b><br>
+					<b>假设每摇一次2元，摇1000次1000*2=2000元</b><br>
+					<b>如果免费摇1000次，亏1665元</b><br>
+					<b>如果每次摇奖收2元，则摇1000次赚335元</b><br>					
+					
+					<b>6等奖人数350个，即花2元摇一次亏掉人数约占1/3</b><br>
+					<b>5等奖人数365个，即花2元摇一次保本人数约占1/3</b><br>
+					<b>1-4等奖285个，即花2元赚1倍以上者约占1/3人数。</b><br>
+									
+				<table  class="table table-bordered">
+				<thead>
+					<tr>
+						<th>
+							奖品等级
+						</th>
+						<th>
+							中奖人数
+						</th>
+						<th>
+							奖品单价
+						</th>
+						<th>
+							奖品总额
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="info">
+						<td>
+							1等奖
+						</td>
+						<td>
+							5个
+						</td>
+						<td>
+							市价100元实际50元
+						</td>
+						<td>
+							5*50=250元
+						</td>
+					</tr>
+					<tr class="success">
+						<td>
+							2等奖
+						</td>
+						<td>
+							30个
+						</td>
+						<td>
+							市价20元实际10元
+						</td>
+						<td>
+							30*10=300元
+						</td>
+					</tr>
+					<tr class="error">
+						<td>
+							3等奖
+						</td>
+						<td>
+							50个
+						</td>
+						<td>
+							市价10元实际5元
+						</td>
+						<td>
+							50*5=250元
+						</td>
+					</tr>
+					<tr class="warning">
+						<td>
+							4等奖
+						</td>
+						<td>
+							200个
+						</td>
+						<td>
+							市价5元实际2.5元
+						</td>
+						<td>
+							200*2.5=500元
+						</td>
+					</tr>
+					<tr class="info">
+						<td>
+							5等奖
+						</td>
+						<td>
+							365个
+						</td>
+						<td>
+							市价2元实际1元
+						</td>
+						<td>
+							365*1=365元
+						</td>
+					</tr>
+					<tr class="success">
+						<td>
+							6等奖
+						</td>
+						<td>
+							350个
+						</td>
+						<td>
+							付2元再摇一次
+						</td>
+						<td>
+							0元
+						</td>
+					</tr>				
+					
+				</tbody>
+			</table>
+					
+					<hr >
+					<b>购物满10元(假设利润2元)赠送摇奖一次，起码不亏</b><br>
 <br>
 					<b>1:摇奖机由一台主机+一台手机组成。</b><br>
 					<b>2:店内需一台液晶电视显示摇奖过程+结果。</b><br>
@@ -37,14 +156,15 @@
 					<div class="fakeimg"><img class="img-responsive center-block" src="../images/c_01.jpg"></div><br>
 
 <hr >
-					<b>一:顾客想要的东西，你都可当作奖品提供</b><br>
-					<b>二:免费或顾客渴望的奖品，才能吸引顾客</b><br>
-					<b>三:舍不得孩子套不住狼，找到你客户弱点</b><br>
-					<b>四:控制好奖品赔率，买的永远没有卖的精</b><br>
-					<b>五:关键是提供你的顾客群体感兴趣的奖品</b><br>
-					<b>六:甭费话，干就完了，好不好用了才知道</b><br>
-					<b>七:找销售摇奖机的，免费试用一月看效果</b><br>
-
+					<b>一：顾客想要的任何东西或服务，都是奖品。</b><br>
+					<b>二：只有顾客进店了，你才有机会做成生意。</b><br>
+					<b>三：舍不得孩子套不住狼，狠狠勾引顾客吧。</b><br>
+					<b>四：控制好奖品赔率，买的永远没有卖的精。</b><br>
+					<b>五：关键是提供你的顾客群体感兴趣的奖品。</b><br>
+					<b>六：甭费话，干就完了，好不好，用了知道。</b><br>
+					<b>七：找销售摇奖机的，免费试用一月看效果。</b><br>
+<hr >
+<a href="//www.vipmeng.com/1/other.html">不同店铺设置的奖品例子参考</a><br><br>
 
 <!--图片说明-->
 <hr >
@@ -122,7 +242,7 @@
 					else
 						visits = parseInt(visits) + 1
 					setCookie("counter", visits, now)
-					document.write("您是第" + (10000 + visits) + "位访问本站者！")
+					document.write("您是本站第" + (10000 + visits) + "位访问者！")
 					// -->
 				</script>
 
