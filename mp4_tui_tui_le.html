@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>推推乐游戏</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" , shrink-to-fit=no>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<!--img图片自适应-->
+		<style type="text/css">
+			.img-responsive {
+				display: inline-block;
+				height: auto;
+				max-width: 100%;
+			}
+		</style>
+		<!-- ctrl + / 注释整行　　ctrl+shift+f格式对齐 -->
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span12">	
+<br>
+
+					<b>推推乐游戏：</b>	<br><br>	
+<div style="text-align:center"> 
+  <button onclick="playPause()">播放/暂停</button> 
+  <button onclick="makeBig()">放大</button>
+  <button onclick="makeSmall()">缩小</button>
+  <button onclick="makeNormal()">普通</button>
+  <br><br>
+  <video id="video1" width="320"  autoplay="autoplay">
+    <source src="../mp4/推推乐.mp4" type="video/mp4">
+    您的浏览器不支持 HTML5 video 标签。
+  </video>
+</div> 
+
+<script> 
+var myVideo=document.getElementById("video1"); 
+
+function playPause()
+{ 
+	if (myVideo.paused) 
+	  myVideo.play(); 
+	else 
+	  myVideo.pause(); 
+} 
+
+	function makeBig()
+{ 
+	myVideo.width=420; 
+} 
+
+	function makeSmall()
+{ 
+	myVideo.width=240; 
+} 
+
+	function makeNormal()
+{ 
+	myVideo.width=320; 
+} 
+</script> 
+<hr >
+					<div id="">
+						<a href="//www.vipmeng.com/index.html">返回首页</a><br><br>
+					</div>
+				</div>
+	</body>
+</html>
